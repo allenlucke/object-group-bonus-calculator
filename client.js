@@ -30,6 +30,22 @@ const employees = [
     reviewRating: 1
   }
 ];
+// let allEmployees = [];
+
+function processEmployee(employee){
+  // employee is the object we care about!
+  const newObject = {};
+  newObject.name = employee.name;
+  //newObject.bonusPercentage = employee.employeeNu;
+  //newObject.totalCompensation = employee.totalCompensation;
+  //newObject.totalBonus = employee.totalBonus;
+  return newObject;
+
+}
+console.log(processEmployee('Jem'))
+for(let i = 0; i < employees.length; i++) {
+  processEmployee(employees[i]);
+}
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
@@ -40,4 +56,11 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+// let  employeeNames (employees) = {
+//   name: 'name',
+//   employeeNumber: 'employeeNumber',
+//   annualSalary: 'annualSalary',
+//   reviewRating: 'reviewRating',
+// }
+
+
